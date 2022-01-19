@@ -1,0 +1,12 @@
+@import '../base/global-variable';
+
+    .contact-content{
+        .contact-info{
+            background-color: $Sky;
+            box-shadow: 0 -5px 2px #000;
+            position: relative;
+            left: 5vw;
+            bottom: 7vh;
+            height: 30vh;
+        }
+    }

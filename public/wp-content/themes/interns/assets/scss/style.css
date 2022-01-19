@@ -1,0 +1,328 @@
+nav .bar-list {
+  display: none;
+}
+
+nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav-links a {
+  opacity: 0.9;
+}
+
+nav .nav-links a:hover {
+  opacity: 1;
+  -webkit-transition: all ease-in-out .1s;
+  transition: all ease-in-out .1s;
+}
+
+nav .join-btn {
+  display: none;
+}
+
+.bg-mint {
+  background-color: #F4FEF3;
+}
+
+.head {
+  margin-top: 45px;
+}
+
+.head .mbl-hero {
+  display: none;
+}
+
+.bg-mint {
+  background-color: #F4FEF3;
+}
+
+.bg-blush {
+  background-color: #F4EEE8;
+}
+
+.client .background {
+  border-radius: 50%;
+  background-color: #114E60;
+  padding-left: 35px;
+}
+
+@media screen and (max-width: 1100px) {
+  nav .navbar-brand img {
+    position: relative;
+    top: -10px;
+  }
+  nav .bar-list {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    top: 5px;
+  }
+  nav .nav-links {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100vw;
+    background-color: white;
+    padding: 0 4vw 1vh;
+    display: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .join-btn {
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+    top: 35px;
+  }
+  .blog-header .blog-content .head-info {
+    top: 30vh;
+  }
+  .single-blog-body .blog-note .cat-card .cards .last {
+    display: none;
+  }
+}
+
+.bg-mint {
+  background-color: #F4FEF3;
+}
+
+.footer {
+  background-color: #325288;
+}
+
+@media screen and (max-width: 768px) {
+  nav .join-btn {
+    display: none;
+  }
+  .head .mbl-hide {
+    display: none;
+  }
+  .head .mbl-hero {
+    display: block;
+  }
+  .about-us .image3 {
+    padding-top: 30px;
+  }
+  .team .team-message {
+    padding-bottom: 30px;
+  }
+  .blogs .blogs-content .content-info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .blogs .blogs-content .content-img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .blog-header .blog-content .head-info {
+    position: relative;
+    top: -1vh;
+    left: 3vw;
+    width: 94vw;
+  }
+  .blog-note .category {
+    display: block;
+  }
+  .blog-note .cat-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blog-note .cat-search .dropdown {
+    top: 20vh;
+    width: 100%;
+  }
+  .blog-note form {
+    margin: 2vh 0;
+  }
+  .blog-note .list-group {
+    border: solid 1px #db7a57;
+  }
+  .single-blog-body .blog-head img {
+    width: 100%;
+    height: 45vh;
+  }
+  .single-blog-body .blog-head .head-info {
+    padding: 5px;
+    left: 4vw;
+    top: 50vh;
+    width: 92vw;
+  }
+  .single-blog-body .single-blog-content {
+    width: 100%;
+    padding: 0 6vw;
+  }
+  .contact-body .contact-content .contact-info {
+    left: 3vw;
+    width: 94vw;
+  }
+  .footer ul {
+    display: none;
+  }
+}
+
+.bg-mint {
+  background-color: #F4FEF3;
+}
+
+.blog-header {
+  background-color: #F4FEF3;
+  margin-top: 10vh;
+}
+
+.blog-header .blog-content {
+  position: relative;
+}
+
+.blog-header .blog-content .head-info {
+  background-color: #325288;
+  position: absolute;
+  right: 0;
+  top: 45vh;
+  -webkit-box-shadow: 0 -5px 2px #000000;
+          box-shadow: 0 -5px 2px #000000;
+}
+
+.blog-note .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-note .cat-card .cards {
+  -webkit-box-shadow: 8px 8px 4px rgba(244, 238, 232, 0.8);
+          box-shadow: 8px 8px 4px rgba(244, 238, 232, 0.8);
+  min-height: 56vh;
+}
+
+.blog-note .cat-card .cards:hover {
+  background-color: #F4EEE8;
+  -webkit-box-shadow: 8px 8px 4px #f4eee8;
+          box-shadow: 8px 8px 4px #f4eee8;
+  -webkit-transition: all ease-in-out 3s;
+  transition: all ease-in-out 3s;
+}
+
+.blog-note nav ul li {
+  padding: 0 1vw;
+}
+
+.blog-note nav ul li:first-child {
+  margin-right: 5vw;
+}
+
+.blog-note nav ul li:last-child {
+  margin-left: 5vw;
+}
+
+.blog-note nav ul li:active a, .blog-note nav ul li a.active {
+  text-decoration: underline;
+  color: black;
+}
+
+.blog-note nav ul li a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.blog-note nav ul li a i {
+  background-color: #000000;
+  color: #ffff;
+  padding: .5rem;
+  border-radius: 50%;
+}
+
+.blog-note nav ul li a i:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.blog-note .cat-search {
+  position: relative;
+}
+
+.blog-note .cat-search .latest:hover {
+  cursor: pointer;
+}
+
+.blog-note .cat-search .dropdown {
+  display: none;
+  position: absolute;
+  top: 8vh;
+  right: 0;
+  width: 300px;
+}
+
+.blog-note .cat-search .dropdown .list-group {
+  border: solid 1px #F4EEE8;
+}
+
+.blog-note .cat-search .dropdown .list-group .list-group-item {
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  background-color: #F4FEF3;
+}
+
+.bg-mint {
+  background-color: #F4FEF3;
+}
+
+.blog-head {
+  margin-top: 10vh;
+  position: relative;
+}
+
+.blog-head img {
+  width: 100%;
+  height: 45vh;
+}
+
+.blog-head .head-info {
+  background-color: #325288;
+  position: absolute;
+  right: 0;
+  top: 35vh;
+}
+
+.blog-note .cat-card .cards {
+  -webkit-box-shadow: 5px 5px 2px rgba(219, 122, 87, 0.3);
+          box-shadow: 5px 5px 2px rgba(219, 122, 87, 0.3);
+}
+
+.blog-note .cat-card .cards:hover {
+  -webkit-box-shadow: 5px 5px 2px rgba(219, 122, 87, 0.8);
+          box-shadow: 5px 5px 2px rgba(219, 122, 87, 0.8);
+  background-color: rgba(219, 122, 87, 0.2);
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.bg-mint {
+  background-color: #F4FEF3;
+}
+
+.contact-content .contact-info {
+  background-color: #325288;
+  -webkit-box-shadow: 0 -5px 2px #000;
+          box-shadow: 0 -5px 2px #000;
+  position: relative;
+  left: 5vw;
+  bottom: 7vh;
+  height: 30vh;
+}
+/*# sourceMappingURL=style.css.map */

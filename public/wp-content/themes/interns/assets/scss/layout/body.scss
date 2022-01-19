@@ -1,0 +1,24 @@
+@import '../base/global-variable';
+.head{
+    margin-top: 45px;
+    .mbl-hero{
+        display: none;
+    }
+}
+.bg-mint{
+    background-color: $Mint;
+}
+
+.bg-blush{
+    background-color: $Blush;
+}
+
+.client{
+    .background{
+        border-radius: 50%;
+        background-color: $Teal;
+        padding-left: 35px;
+
+    }
+}
+

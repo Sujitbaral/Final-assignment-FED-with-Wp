@@ -1,0 +1,28 @@
+@import '../base/global-variable';
+
+    .blog-head{
+        margin-top: 10vh;
+        position: relative;
+        img{
+            width: 100%;
+            height: 45vh;
+        }
+        .head-info{
+            background-color: $Sky;
+            position: absolute;
+            right: 0;
+            top: 35vh;
+        }
+    }
+    .blog-note{
+        .cat-card{
+            .cards{
+                box-shadow:5px 5px 2px rgba($color: #db7a57, $alpha: .3) ;
+                &:hover{
+                box-shadow:5px 5px 2px rgba($color: #db7a57, $alpha: .8) ;
+                background-color: rgba($color: #db7a57, $alpha: .2);
+                transition: all ease-in-out .3s;
+                }
+            }
+        }
+    }

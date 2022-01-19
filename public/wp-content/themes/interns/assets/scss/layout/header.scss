@@ -1,0 +1,19 @@
+
+nav{
+    .bar-list{
+        display: none;
+    }
+    .nav-links{
+        display: flex;
+        a{
+            opacity: 0.9;
+            &:hover{
+                opacity: 1;
+                transition: all ease-in-out .1s;
+            }
+        }
+    }
+    .join-btn{
+        display: none;
+    }
+}

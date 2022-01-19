@@ -1,0 +1,94 @@
+// blog page
+@import '../base/global-variable';
+
+    .blog-header{
+        background-color: $Mint;
+        margin-top: 10vh;
+    
+        .blog-content{
+             position: relative;
+            .head-info{
+                background-color: $Sky;
+                position: absolute;
+                right: 0;
+                top: 45vh;
+                box-shadow: 0 -5px 2px #000000;
+            }
+    
+        }
+        
+    }
+    .blog-note{
+        .category{
+            display: flex;
+        }
+        .cat-card{
+            .cards{
+                box-shadow: 8px 8px 4px rgba(#F4EEE8,0.8);
+                min-height: 56vh;
+                &:hover{
+                    background-color:#F4EEE8;
+                box-shadow: 8px 8px 4px rgba(#F4EEE8,1);
+                transition: all ease-in-out 3s;
+               
+    
+                } 
+            }
+        }
+        nav{
+            ul{
+                li{
+                    padding: 0 1vw;
+                   &:first-child{
+                       margin-right: 5vw;
+                   }
+                   &:last-child{
+                    margin-left: 5vw;
+                }
+                 &:active a, a.active{
+                     text-decoration: underline;
+                     color: rgba($color: #000000, $alpha: 1);
+                 }
+                a{
+                    color:rgba($color: #000000, $alpha: .5);
+                    text-decoration: none;
+                    i{
+                        background-color: #000000;
+                        color: #ffff;
+                        padding:.5rem;
+                        border-radius: 50%;
+                        &:hover{
+                            background-color:rgba($color: #000000, $alpha: .5) ;
+                            transition: all ease-in-out .3s;
+                        }
+                    }
+                }
+                }
+            }
+        }
+        .cat-search{
+            position: relative;
+            .latest{
+               &:hover{
+                   cursor: pointer;
+               }
+            }
+            .dropdown{
+                display: none;
+                position: absolute;
+                top: 8vh;
+                right: 0;
+                width: 300px;
+                .list-group{
+                    border: solid 1px $Blush;
+                    .list-group-item{
+                        border: solid 1px rgba(#000,0.2);
+                        background-color: $Mint;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    
