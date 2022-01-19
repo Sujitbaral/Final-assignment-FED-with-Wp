@@ -52,11 +52,11 @@ add_action('wp_enque_scripts', 'outside_files');
 function interns_post_type_init()
 {
     register_post_type(
-        'news',
+        'blog',
         array(
             'labels' => array(
-                'name' => __('News', 'intern'),
-                'singular_name' => __('News', 'intern'),
+                'name' => __('blog', 'intern'),
+                'singular_name' => __('blogs', 'intern'),
             ),
             'public' => true,
             'publicly_queryable' => true,
@@ -65,7 +65,7 @@ function interns_post_type_init()
             'show_in_rest' => true,
             'hierarchical' => true,
             'menu_icon' => 'dashicons-welcome-write-blog',
-            'rewrite' => array( 'slug' => 'news' ),
+            'rewrite' => array( 'slug' => 'blog' ),
             'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' )
         )
     );
@@ -101,7 +101,7 @@ function create_types_hierarchical_taxonomy() {
   );    
  
 // Now register the taxonomy
-  register_taxonomy('subjects',array('news'), array(
+  register_taxonomy('subjects',array('blog'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,

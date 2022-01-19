@@ -77,95 +77,33 @@ get_header();
           </div>
         </div>
         <div class="cat-card row g-4 py-5">
+                                        <?php 
+				                    	$args= array(
+				                    	'post_type'=> 'blog',
+				                    	'post_per_page'=> 6,
+
+				                    	);
+				                    	$the_query =new WP_Query($args);
+				                    	?>
+				                    	<?php if ($the_query->have_posts() ) : ?>
+				                    	<?php while ($the_query-> have_posts()): $the_query-> the_post();?>
+
           <div class="col-lg-4 col-md-6">
             <div class="cards">
-              <a href="single-blog.html">
-                <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/6.jpg" alt="">
-              </a>
+                <a href=" <?php the_permalink(); ?>"> <img class="card-img-top" src= <?php the_post_thumbnail(); ?> > </a>
+            
               <div class="card-body">
                 <p class="card-title">
-                  JUNE 11,2021
+                <?php echo get_the_date();?> 
                 </p>
                 <p class="card-text">
-                  Interesting Facts I Bet You Never Knew About BLOGS
+                  <?php the_title(); ?>
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="cards">
-              <a href="#">
-                <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/5.jpg" alt="">
-              </a>
-              <div class="card-body">
-                <p class="card-title">
-                  JUNE 11,2021
-                </p>
-                <p class="card-text">
-                  verything You Wanted to Know About BLOGS and Were Too EEmbarrassed to Ask </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="cards">
-              <a href="#">
-                <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/4.jpg" alt="">
-              </a>
-              <div class="card-body">
-                <p class="card-title">
-                  JUNE 11,2021
-                </p>
-                <p class="card-text">
-                  What Can You Do To Save Your BLOGS From Destruction By Social Media?
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="cards">
-              <a href="#">
-                <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/7.jpg" alt="">
-              </a>
-              <div class="card-body">
-                <p class="card-title">
-                  JUNE 11,2021
-                </p>
-                <p class="card-text">
-                  White Paper: Call to NASA for Low-Cost Innovation, New Talent Pipeline in Missions
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="cards">
-              <a href="#">
-                <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/2.jpg" alt="">
-              </a>
-              <div class="card-body">
-                <p class="card-title">
-                  JUNE 11,2021
-                </p>
-                <p class="card-text">
-                  Becoming Friends with a Mars Rover
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="cards">
-              <a href="#">
-                <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/3.jpg" alt="">
-              </a>
-              <div class="card-body">
-                <p class="card-title">
-                  JUNE 11,2021
-                </p>
-                <p class="card-text">
-                  Some Assembly Required: Documentation in Mars Rover Design
-                </p>
-              </div>
-            </div>
-          </div>
+          <?php endwhile; ?>
+          <?php endif; ?>
           <nav class="d-flex justify-content-center mt-5">
             <ul class="pagination">
               <li class="page-item"><a href="#"><i class="bi bi-arrow-left"></i></a></li>
