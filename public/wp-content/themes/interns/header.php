@@ -20,7 +20,7 @@
         <div class="logo">
           <a href="javascript:void(0)" class="text-dark fs-1 bar-list icon mt-3" onclick="hamburgermenu()"><i
               class="bi bi-list"></i></a>
-          <a href="front-page.php" class="navbar-brand">
+          <a href="<?php echo site_url() ?>" class="navbar-brand">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo1.svg" alt="logo" width="120" height="60">
           </a>
 
@@ -33,13 +33,13 @@
             <a href="#" class="nav-link text-dark">Team</a>
             <a href="#" class="nav-link text-dark">Career</a>
             <a href="contact.php" class="nav-link text-dark">Contact</a> -->
-            <?php
+             <?php
                 wp_nav_menu(array(
                     'theme_location' => 'primary',
                     'menu_class'=>'nav',
                      'menu_id'=>'navigation'
                 ));
-                ?>
+                ?> 
 
           </div>
         </div>

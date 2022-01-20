@@ -1,12 +1,14 @@
-<?php get_header(); ?>
+<?php 
+/* Template Name: Contact */ 
+ get_header(); ?>
 
 
-<div class="contact-content py-5">
+<div class="contact-content bg-mint py-5">
     <div class="container pt-5">
       <div class="row">
         <div class="col-lg-8 offset-lg-3 col-md-8 offset-md-4">
           <figure>
-            <img class="figure-img img-fluid" src="images/contact/image1.jpg" alt="">
+            <img class="figure-img img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/images/contact/image1.jpg" alt="">
           </figure>
         </div>
         <div class="col-lg-8 col-md-8 contact-info px-5 py-4">

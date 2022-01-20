@@ -1,8 +1,10 @@
-
 <?php
-get_header();
-?>
 
+get_header();
+
+
+?>
+ 
 <div class="bg-mint">
     <div class="blog-header py-4">
       <div class="container blog-content">

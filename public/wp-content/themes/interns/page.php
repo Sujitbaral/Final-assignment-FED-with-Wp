@@ -5,7 +5,8 @@
  */
 
 get_header();
-
+echo "akd i";
+exit;
 while ( have_posts() ) :
 	the_post();
 	the_content();
