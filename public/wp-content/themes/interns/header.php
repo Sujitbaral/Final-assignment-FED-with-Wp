@@ -5,7 +5,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title><?php wp_title(' | ', 'echo', 'right'); ?><?php bloginfo('name'); ?></title>
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/scss/style.css">
@@ -28,18 +28,12 @@
         <div>
           <a href="#" class="join-btn"><button type="button" class="btn btn-outline-dark">Join Us Now</button></a>
           <div class="navbar-nav nav-links " id="navigation">
-            <!-- <a href="#" class="nav-link text-dark">About</a>
-            <a href="index.php" class="nav-link text-dark">Blog</a>
+            <a href="#" class="nav-link text-dark">About</a>
+            <a href="<?php echo site_url('/blogs') ?>" class="nav-link text-dark">Blog</a>
             <a href="#" class="nav-link text-dark">Team</a>
             <a href="#" class="nav-link text-dark">Career</a>
-            <a href="contact.php" class="nav-link text-dark">Contact</a> -->
-             <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'primary',
-                    'menu_class'=>'nav',
-                     'menu_id'=>'navigation'
-                ));
-                ?> 
+            <a href="<?php echo site_url('/contact') ?>" class="nav-link text-dark">Contact</a>
+
 
           </div>
         </div>

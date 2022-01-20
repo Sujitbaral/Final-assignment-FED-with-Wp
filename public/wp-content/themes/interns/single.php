@@ -1,6 +1,7 @@
 <?php 
    get_header();
-   the_post();
+   while ( have_posts() ) :
+	the_post();
 ?>
 <main class="single-blog-body">
     <div class="bg-mint">
@@ -8,7 +9,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-8">
                 <figure>
-                    <img class="figure-img img-fluid" src="<?php the_post_thumbnail(); ?>">
+                    <?php the_post_thumbnail('large',array('classs'=>'figure-img img-fluid')); ?>
                 </figure>
             </div>
             <div class="col-lg-6 col-md-8 head-info p-lg-5 p-md-4">
@@ -26,6 +27,7 @@
         ?>
        </div>
     </div>
+    <?php endwhile; ?>
     <div class="blog-note bg-white pt-5 pb-5">
         <div class="container">
             <p class="fw-bold">RELATED BLOGS</p>
@@ -44,7 +46,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="cards p-0">
                         <a href="<?php the_permalink(); ?>" class="text-dark text-decoration-none">
-                            <img class="card-img-top" src="<?php the_post_thumbnail(); ?>">
+                        <?php the_post_thumbnail('large', array('classs'=>'card-img-top')); ?>
                             <div class="card-body">
                                 <p class="card-title fw-bold">
                                 <?php echo get_the_date();?> 

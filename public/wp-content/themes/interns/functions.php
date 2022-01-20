@@ -49,29 +49,29 @@ add_action('wp_enque_scripts', 'outside_files');
 /**
  * create custom post type
  */
-// function interns_post_type_init()
-// {
-//     register_post_type(
-//         'blog',
-//         array(
-//             'labels' => array(
-//                 'name' => __('blog', 'intern'),
-//                 'singular_name' => __('blogs', 'intern'),
-//             ),
-//             'public' => true,
-//             'publicly_queryable' => true,
-//             'has_archive' => true,
-//             'show_ui' => true,
-//             'show_in_rest' => true,
-//             'hierarchical' => true,
-//             'menu_icon' => 'dashicons-welcome-write-blog',
-//             'rewrite' => array( 'slug' => 'blog' ),
-//             'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' )
-//         )
-//     );
-// }
+function interns_post_type_init()
+{
+    register_post_type(
+        'blog',
+        array(
+            'labels' => array(
+                'name' => __('blog', 'intern'),
+                'singular_name' => __('blogs', 'intern'),
+            ),
+            'public' => true,
+            'publicly_queryable' => true,
+            'has_archive' => true,
+            'show_ui' => true,
+            'show_in_rest' => true,
+            'hierarchical' => true,
+            'menu_icon' => 'dashicons-welcome-write-blog',
+            'rewrite' => array( 'slug' => 'blog' ),
+            'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt' )
+        )
+    );
+}
 
-// add_action('init', 'interns_post_type_init');
+add_action('init', 'interns_post_type_init');
 
 /**
  * Add testimonial

@@ -92,7 +92,7 @@ get_header();
 
           <div class="col-lg-4 col-md-6">
             <div class="cards">
-                <a href=" <?php the_permalink(); ?>"> <img class="card-img-top" src= <?php the_post_thumbnail(); ?> > </a>
+                <a href=" <?php the_permalink(); ?>"> <?php the_post_thumbnail('large',array('classs'=>'card-img-top')); ?> </a>
             
               <div class="card-body">
                 <p class="card-title">
