@@ -41,6 +41,7 @@ get_header();
 
 
     </div>
+    
     <div class="blog-note bg-white pt-5 pb-5">
       <div class="container">
         <p class="fw-bold">MORE BLOG NOTES</p>
