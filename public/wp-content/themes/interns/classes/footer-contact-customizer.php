@@ -1,4 +1,3 @@
-<!-- Copyright section customizer -->
 <?php
 function intern_footer_contact($wp_customize) {
 	$wp_customize->add_section('intern-footer-contact-section', array(
@@ -28,4 +27,4 @@ function intern_footer_contact($wp_customize) {
 
 add_action('customize_register', 'intern_footer_contact');
 
-?>
+

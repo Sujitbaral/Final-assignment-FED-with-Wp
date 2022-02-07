@@ -1,4 +1,3 @@
-<!-- Copyright section customizer -->
 <?php
 function intern_footer_copyright($wp_customize) {
 	$wp_customize->add_section('intern-footer-copyright-section', array(
@@ -21,4 +20,3 @@ function intern_footer_copyright($wp_customize) {
 
 add_action('customize_register', 'intern_footer_copyright');
 
-?>

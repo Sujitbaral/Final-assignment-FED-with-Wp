@@ -1,8 +1,5 @@
 <?php
-
 get_header();
-
-
 ?>
  
 <div class="bg-mint">
